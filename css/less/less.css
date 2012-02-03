@@ -70,11 +70,11 @@ body {
 
 /* Selection colours (easy to forget) */
 
-::selection 	 	{background: rgb(255,255,158);}
-::-moz-selection 	{background: rgb(255,255,158);}
+::selection 	 	{background: #2C74BC;}
+::-moz-selection 	{background: #2C74BC;}
 img::selection 		{background: transparent;}
 img::-moz-selection	{background: transparent;}
-body {-webkit-tap-highlight-color: rgb(255,255,158);}
+body {-webkit-tap-highlight-color: #2C74BC;}
 
 
 
