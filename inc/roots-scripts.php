@@ -38,7 +38,7 @@ function roots_scripts() {
     $roots_bootstrap_less_js = $roots_options['bootstrap_less_javascript'];
     $template_uri = get_template_directory_uri();
     if (roots_current_framework() === 'bootstrap_less') {
-      wp_register_script('bootstrap-less', ''.$template_uri.'/js/bootstrap/less-1.2.1.min.js', false, null, false);
+      wp_register_script('bootstrap-less', ''.$template_uri.'/js/bootstrap/less-1.2.1.js', false, null, false);
       wp_enqueue_script('bootstrap-less');
     }
     if ($roots_bootstrap_js === true || $roots_bootstrap_less_js === true) {
@@ -52,11 +52,12 @@ function roots_scripts() {
       wp_register_script('bootstrap-scrollspy', ''.$template_uri.'/js/bootstrap/bootstrap-scrollspy.js', false, null, false);
       wp_register_script('bootstrap-tab', ''.$template_uri.'/js/bootstrap/bootstrap-tab.js', false, null, false);
       wp_register_script('bootstrap-tooltip', ''.$template_uri.'/js/bootstrap/bootstrap-tooltip.js', false, null, false);
+      wp_register_script('bootstrap-twipsy', ''.$template_uri.'/js/bootstrap/bootstrap-twipsy.js', false, null, false);
       wp_register_script('bootstrap-popover', ''.$template_uri.'/js/bootstrap/bootstrap-popover.js', false, null, false);
       wp_register_script('bootstrap-button', ''.$template_uri.'/js/bootstrap/bootstrap-button.js', false, null, false);
       wp_register_script('bootstrap-collapse', ''.$template_uri.'/js/bootstrap/bootstrap-collapse.js', false, null, false);
       wp_register_script('bootstrap-carousel', ''.$template_uri.'/js/bootstrap/bootstrap-carousel.js', false, null, false);
-      wp_register_script('bootstrap-typehead', ''.$template_uri.'/js/bootstrap/bootstrap-typehead.js', false, null, false);
+      wp_register_script('bootstrap-typeahead', ''.$template_uri.'/js/bootstrap/bootstrap-typeahead.js', false, null, false);
       wp_enqueue_script('bootstrap-modal');
       wp_enqueue_script('bootstrap-alert');
       wp_enqueue_script('bootstrap-modal');
@@ -64,11 +65,12 @@ function roots_scripts() {
       wp_enqueue_script('bootstrap-scrollspy');
       wp_enqueue_script('bootstrap-tab');
       wp_enqueue_script('bootstrap-tooltip');
+      wp_enqueue_script('bootstrap-twipsy');
       wp_enqueue_script('bootstrap-popover');
       wp_enqueue_script('bootstrap-button');
       wp_enqueue_script('bootstrap-collapse');
       wp_enqueue_script('bootstrap-carousel');
-      wp_enqueue_script('bootstrap-typehead');
+      wp_enqueue_script('bootstrap-typeahead');
     }
   }
 }
