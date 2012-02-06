@@ -3,7 +3,7 @@
     <div id="content" class="<?php echo $roots_options['container_class']; ?>">
     <?php roots_main_before(); ?>
       <div id="main" class="<?php echo $roots_options['main_class']; ?>" role="main">
-        <div class="container">
+        <div class="container well-white">
           <?php roots_loop_before(); ?>
           <?php get_template_part('loop', 'single'); ?>
           <?php roots_loop_after(); ?>
