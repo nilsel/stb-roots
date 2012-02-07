@@ -13,6 +13,7 @@
       <footer>
         <?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
         <?php $tags = get_the_tags(); if ($tags) { ?><p><?php the_tags(); ?></p><?php } ?>
+        <hr/>
       </footer>
       <?php comments_template(); ?>
       <?php roots_post_inside_after(); ?>

@@ -13,7 +13,7 @@ body { }
 #banner { }
 
 /* Fixed Topbar Navigation */
-body { padding-top: 60px; }
+body { /*padding-top: 60px;*/ }
 body.admin-bar .navbar-fixed-top { top: 28px; }
 
 
@@ -68,7 +68,7 @@ ol.commentlist img.avatar { float: left; margin-right: 10px; }
    ========================================================================== */
 
 #content-info {
-  margin-top: 45px;
+  /* margin-top: 45px; */
   padding: 35px 0 36px;
   border-top: 1px solid #e5e5e5;
 }
