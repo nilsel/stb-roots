@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
    Header
    ========================================================================== */
 
-#banner { position: relative; margin: 16px auto 0; z-index: 1000; }
+#banner { position: relative; margin: 0 auto 0; z-index: 1000; }
 #banner .container { padding: 0; }
 
 #logo { float: left; margin: 0 0 6px; padding: 0; }
