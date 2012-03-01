@@ -10,7 +10,7 @@ $("a[rel=popover]").popover().click(function(e) {
 });
 
 // tooltip demo
-/////$('a[rel=tooltip]').tooltip();
+// $('a[rel=tooltip]').tooltip();
 
 
 });
