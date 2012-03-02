@@ -9,7 +9,11 @@
 // Clearfix
 // --------
 // For clearing floats like a boss h5bp.com/q
+<<<<<<< HEAD
 .clearfix() {
+=======
+.clearfix {
+>>>>>>> upstream/master
   *zoom: 1;
   &:before,
   &:after {
@@ -25,7 +29,11 @@
 // ------------------
 .tab-focus() {
   // Default
+<<<<<<< HEAD
   outline: thin dotted;
+=======
+  outline: thin dotted #333;
+>>>>>>> upstream/master
   // Webkit
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -89,6 +97,18 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+// Text overflow
+// -------------------------
+// Requires inline-block or block for proper styling
+.text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+>>>>>>> upstream/master
 
 
 // FONTS
@@ -199,13 +219,21 @@
   // Setup the mixins to be used
   .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, @columns) {
     width: 1% * (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
+<<<<<<< HEAD
   } 
+=======
+  }
+>>>>>>> upstream/master
   .gridColumn(@fluidGridGutterWidth) {
     float: left;
     margin-left: @fluidGridGutterWidth;
   }
   // Take these values and mixins, and make 'em do their thang
+<<<<<<< HEAD
   .generate(@gridColumns, @fluidGridColumnWidth, @fluidGridGutterWidth) {      
+=======
+  .generate(@gridColumns, @fluidGridColumnWidth, @fluidGridGutterWidth) {
+>>>>>>> upstream/master
     // Row surrounds the columns
     .row-fluid {
       width: 100%;
@@ -219,6 +247,7 @@
         margin-left: 0;
       }
       // Default columns
+<<<<<<< HEAD
       .span1     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 1); }
       .span2     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 2); }
       .span3     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 3); }
@@ -231,12 +260,29 @@
       .span10    { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 10); }
       .span11    { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 11); }
       .span12    { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 12); }
+=======
+      > .span1     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 1); }
+      > .span2     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 2); }
+      > .span3     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 3); }
+      > .span4     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 4); }
+      > .span5     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 5); }
+      > .span6     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 6); }
+      > .span7     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 7); }
+      > .span8     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 8); }
+      > .span9     { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 9); }
+      > .span10    { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 10); }
+      > .span11    { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 11); }
+      > .span12    { #fluidGridSystem > .columns(@fluidGridGutterWidth, @fluidGridColumnWidth, 12); }
+>>>>>>> upstream/master
     }
   }
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> upstream/master
 // Input grid system
 // -------------------------
 #inputGridSystem {
@@ -263,6 +309,55 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+// Make a Grid
+// -------------------------
+// Use .makeRow and .makeColumn to assign semantic layouts grid system behavior
+.makeRow() {
+  margin-left: @gridGutterWidth * -1;
+  .clearfix();
+}
+.makeColumn(@columns: 1) {
+  float: left;
+  margin-left: @gridGutterWidth;
+  width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
+}
+
+
+
+// Form field states (used in forms.less)
+// --------------------------------------------------
+
+// Mixin for form field states
+.formFieldState(@textColor: #555, @borderColor: #ccc, @backgroundColor: #f5f5f5) {
+  // Set the text color
+  > label,
+  .help-block,
+  .help-inline {
+    color: @textColor;
+  }
+  // Style inputs accordingly
+  input,
+  select,
+  textarea {
+    color: @textColor;
+    border-color: @borderColor;
+    &:focus {
+      border-color: darken(@borderColor, 10%);
+      .box-shadow(0 0 6px lighten(@borderColor, 20%));
+    }
+  }
+  // Give a small background color for input-prepend/-append
+  .input-prepend .add-on,
+  .input-append .add-on {
+    color: @textColor;
+    background-color: @backgroundColor;
+    border-color: @textColor;
+  }
+}
+
+>>>>>>> upstream/master
 
 
 // CSS3 PROPERTIES
@@ -314,6 +409,7 @@
           transform: translate(@x, @y);
 }
 .skew(@x: 0, @y: 0) {
+<<<<<<< HEAD
   -webkit-transform: translate(@x, @y);
      -moz-transform: translate(@x, @y);
       -ms-transform: translate(@x, @y);
@@ -321,12 +417,24 @@
           transform: translate(@x, @y);
 }
 .skew(@x: 0, @y: 0) {
+=======
+>>>>>>> upstream/master
   -webkit-transform: skew(@x, @y);
      -moz-transform: skew(@x, @y);
       -ms-transform: skew(@x, @y);
        -o-transform: skew(@x, @y);
           transform: skew(@x, @y);
 }
+<<<<<<< HEAD
+=======
+.translate3d(@x: 0, @y: 0, @z: 0) {
+  -webkit-transform: translate(@x, @y, @z);
+     -moz-transform: translate(@x, @y, @z);
+      -ms-transform: translate(@x, @y, @z);
+       -o-transform: translate(@x, @y, @z);
+          transform: translate(@x, @y, @z);
+}
+>>>>>>> upstream/master
 
 // Background clipping
 // Heads up: FF 3.6 and under need "padding" instead of "padding-box"
