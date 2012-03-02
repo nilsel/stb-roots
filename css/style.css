@@ -71,46 +71,11 @@ td { vertical-align: top; }
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
 
-/* ==|== roots styles ======================================================= */
-
-a:active, input.button:active { outline: 0; position: relative; top: 1px; }
-
-.button, #post-nav a, #comments-nav a {
-  display: inline-block;
-  background: #06c;
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
-  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
-  width: auto;
-  overflow: visible;
-  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2), 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2), 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2), 1px 1px 3px rgba(0, 0, 0, 0.2) inset;
-  -webkit-appearance: none;
-}
-.button:hover, #post-nav a:hover, #comments-nav a:hover {
-  background: #09f;
-  color: #fff;
-}
-
-h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
-
-
-
-/* =============================================================================
-   Header
+/* ==|== primary styles =====================================================
+   Author:
    ========================================================================== */
 
+<<<<<<< HEAD
 #banner { position: relative; margin: 0 auto 0; z-index: 1000; }
 #banner .container { padding: 0; }
 
@@ -190,32 +155,21 @@ h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
 
 #nav-main ul ul ul { left: 100%; top: 0; }
 #nav-main ul li:hover > ul { visibility: visible; }
-
-#nav-utility { position: absolute; top: 0; right: 0; }
-#nav-utility ul { list-style: none; margin: 0; padding: 0; float: right; width: auto; position: relative; }
-#nav-utility ul li { float: left; position: relative; }
-#nav-utility ul li a { display: block; float: left; padding: 2px 6px; }
+=======
+>>>>>>> upstream/master
 
 
 
-/* =============================================================================
-   Content
-   ========================================================================== */
-
-#content { margin-bottom: 24px; }
-#content .container { width: auto; position: relative; padding: 0; }
 
 
 
-/* =============================================================================
-   Primary Content
-   ========================================================================== */
-
-#main { position: relative; }
-#main .container { padding: 0; }
 
 
 
+
+
+
+<<<<<<< HEAD
 /* =============================================================================
    Sidebar
    ========================================================================== */
@@ -286,6 +240,8 @@ ol.commentlist time { display: block; font-size: 1em; margin-bottom: 0.5em; posi
 
 
 
+=======
+>>>>>>> upstream/master
 
 
 
