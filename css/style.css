@@ -19,8 +19,8 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 body { margin: 0; font-size: 1em; line-height: 1.4; }
 
-::-moz-selection { background: #2C74BC; color: #fff; text-shadow: none; }
-::selection { background: #2C74BC; color: #fff; text-shadow: none; }
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
 a { color: #00e; }
 a:hover { color: #06e; }
@@ -75,88 +75,6 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 
-<<<<<<< HEAD
-#banner { position: relative; margin: 0 auto 0; z-index: 1000; }
-#banner .container { padding: 0; }
-
-#logo { float: left; margin: 0 0 6px; padding: 0; }
-
-#nav-main ul {
-  background: #D02A22;
-  background-image: -moz-linear-gradient(top, rgba(255, 200, 200, 0.3), rgba(0, 0, 0, 0.1));
-  background-image: -o-linear-gradient(top, 	rgba(255, 200, 200, 0.3), rgba(0, 0, 0, 0.1));
-  background-image: -webkit-linear-gradient(	rgba(255, 200, 200, 0.3), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(top, 			rgba(255, 200, 200, 0.3), rgba(0, 0, 0, 0.1));
-  position: relative;
-  list-style: none;
-  margin: 0 0 16px 0;
-  padding: 0;
-  float: left;
-  width: 100%;
-  -moz-border-radius: 		4px;
-  -webkit-border-radius: 	4px;
-  border-radius: 					4px;
-}
-#nav-main ul li { float: left; margin: 0; *zoom: 1; }
-#nav-main ul li:hover { position: relative; }
-#nav-main ul li a {
-  text-decoration: none;
-  display: block;
-  font-size: 14px;
-  padding: 8px 16px;
-  color: #fff;
-  margin: 0;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.15);
-}
-#nav-main ul li a:hover,
-#nav-main ul li.current-menu-item > a,
-#nav-main ul li.current-menu-parent > a,
-#nav-main ul li.current-menu-ancestor > a,
-#nav-main ul li.current-page-item > a,
-#nav-main ul li.current-page-parent > a,
-#nav-main ul li.current-page-ancestor > a
-#nav-main ul li:hover > a {
-  /* color: #73c8ff; // STBMOD */
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  /* /MOD */
-}
-
-#nav-main ul ul {
-  position: absolute;
-  visibility: hidden;
-  top: 100%;
-  left: 0;
-  width: 200px;
-  background: #73c8ff;
-  padding: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-#nav-main ul ul li { float: none; }
-#nav-main ul ul li a {
-  font-size: 12px;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
-  padding: 4px 16px;
-  width: 168px; /* account for the width of ul#nav-main ul and the padding on the anchor */
-  display: inline-block;
-
-}
-#nav-main ul ul li a:hover,
-#nav-main ul ul li.current-menu-item > a,
-#nav-main ul ul li.current-menu-parent > a,
-#nav-main ul ul li.current-menu-ancestor > a,
-#nav-main ul ul li.current-page-item > a,
-#nav-main ul ul li.current-page-parent > a,
-#nav-main ul ul li.current-page-ancestor > a
-#nav-main ul ul li:hover > a {
-  color: #06c;
-}
-
-#nav-main ul ul ul { left: 100%; top: 0; }
-#nav-main ul li:hover > ul { visibility: visible; }
-=======
->>>>>>> upstream/master
 
 
 
@@ -169,79 +87,6 @@ td { vertical-align: top; }
 
 
 
-<<<<<<< HEAD
-/* =============================================================================
-   Sidebar
-   ========================================================================== */
-
-#sidebar { position: relative; }
-#sidebar .container { width: auto; padding: 0; }
-#sidebar .widget { clear: both; margin-bottom: 1.5em; }
-#sidebar .widget .gform_wrapper ul { padding: 0; list-style-type: none; }
-
-
-
-/* =============================================================================
-   Posts
-   ========================================================================== */
-
-.hentry header { margin-bottom: 1.5em; }
-.hentry h1 { line-height: 1.2em; margin-bottom: 0.2em; }
-.hentry h2:first-child { line-height: 1.2em; margin-bottom: 0; }
-.hentry h2 a { text-decoration: none; }
-.hentry time { display: block; font-size: 1.2em; position: relative; }
-.hentry p.byline { }
-
-
-
-/* =============================================================================
-   Post & Comment Navigation
-   ========================================================================== */
-
-#post-nav { clear: both; *display: inline-block; }
-#post-nav:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden; }
-#post-nav .post-previous { float: left; width: 50%; }
-#post-nav .post-next { float: right; width: 50%; text-align: right; }
-#post-nav .post-next a { float: right; }
-
-#comments-nav { clear: both; margin: 0 0 1.5em 0; *display: inline-block; }
-#comments-nav:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden; }
-#comments-nav .comments-previous { float: left; width: 50%; }
-#comments-nav .comments-next { float: right; width: 50%; text-align: right; }
-#comments-nav .comments-next a { float: right; }
-
-
-
-/* =============================================================================
-   Post Comments
-   ========================================================================== */
-
-ol.commentlist img.avatar { float: left; margin-right: 10px; }
-ol.commentlist time { display: block; font-size: 1em; margin-bottom: 0.5em; position: relative; }
-#commentform label { display: block; }
-#commentform textarea { display: block; }
-#commentform input.button { margin-top: 0.5em; }
-
-
-
-/* =============================================================================
-   Galleries
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> upstream/master
 
 
 

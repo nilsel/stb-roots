@@ -2,13 +2,14 @@
 // Variables to customize the look and feel of Bootstrap
 // -----------------------------------------------------
 
-
+// STBMOD
+@stbRounded:			4px;
 
 // GLOBAL VALUES
 // --------------------------------------------------
 
 // Links
-@linkColor:             #21759B;
+@linkColor:             #08c;
 @linkColorHover:        darken(@linkColor, 15%);
 
 // Grays
@@ -39,8 +40,6 @@
 // Buttons
 @primaryButtonBackground:    @linkColor;
 
-// STBMOD
-@stbRounded:						4px;
 
 
 // COMPONENT VARIABLES
@@ -49,20 +48,28 @@
 // Z-index master list
 // Used for a bird's eye view of components dependent on the z-axis
 // Try to avoid customizing these :)
-@zindexDropdown:        1000;
-@zindexPopover:         1010;
-@zindexTooltip:         1020;
-@zindexFixedNavbar:     1030;
-@zindexModalBackdrop:   1040;
-@zindexModal:           1050;
+@zindexDropdown:          1000;
+@zindexPopover:           1010;
+@zindexTooltip:           1020;
+@zindexFixedNavbar:       1030;
+@zindexModalBackdrop:     1040;
+@zindexModal:             1050;
+
+// Sprite icons path
+@iconSpritePath:          "../img/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
 
 // Input placeholder text color
-@placeholderText:       @grayLight;
+@placeholderText:         @grayLight;
+
+// Hr border color
+@hrBorder:                @grayLighter;
 
 // Navbar
 @navbarHeight:                    40px;
 @navbarBackground:                @white;
 @navbarBackgroundHighlight:       @grayLighter;
+@navbarLinkBackgroundHover:       transparent;
 
 @navbarText:                      @grayLight;
 @navbarLinkColor:                 @grayLight;
