@@ -338,6 +338,9 @@ a:hover {
   margin-bottom: 0.5em;
   border-bottom: 1px #ccc dotted;
 }
+.commentlist li.comment {
+  margin: 0 0 1.5em 0;
+}
 p {
   margin: 0 0 9px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
