@@ -64,7 +64,7 @@
 <?php if (!have_comments() && !comments_open() && !is_page() && post_type_supports(get_post_type(), 'comments')) { ?>
   <section id="comments">
     <div class="alert alert-block fade in">
-      <a class="close" data-dismiss="alert">×</a>
+      <a class="close" data-dismiss="alert">&times;</a>
       <p><?php _e('Comments are closed.', 'roots'); ?></p>
     </div>
   </section><!-- /#comments -->
