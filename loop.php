@@ -10,6 +10,7 @@
 <?php /* Start loop */ ?>
 <?php while (have_posts()) : the_post(); ?>
   <?php roots_post_before(); ?>
+  <div class="well">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php roots_post_inside_before(); ?>
       <header>
@@ -28,6 +29,7 @@
       </footer>
     <?php roots_post_inside_after(); ?>
     </article>
+  </div>
   <?php roots_post_after(); ?>
 <?php endwhile; /* End loop */ ?>
 
