@@ -181,7 +181,7 @@
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 9px 10px 0 0;
 }
 .navbar .nav.pull-right {
   float: right; // redeclare due to specificity
@@ -198,13 +198,13 @@
   line-height: 19px;
   color: @navbarLinkColor;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  text-shadow: 0 2px 2px rgba(0,0,0,.25);
 }
 // Hover
 .navbar .nav > li > a:hover {
   background-color: @navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
   color: @navbarLinkColorHover;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 // Active nav items
