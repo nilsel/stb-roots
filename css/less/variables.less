@@ -40,6 +40,11 @@
 // Buttons
 @primaryButtonBackground:    @linkColor;
 
+@stbSelect:				@green;
+
+::-moz-selection { background: @stbSelect; color: #fff; text-shadow: none; }
+::selection { background: @stbSelect; color: #fff; text-shadow: none; }
+
 
 
 // COMPONENT VARIABLES
@@ -71,9 +76,9 @@
 @navbarBackgroundHighlight:       @grayLighter;
 @navbarLinkBackgroundHover:       transparent;
 
-@navbarText:                      @grayLight;
-@navbarLinkColor:                 @grayLight;
-@navbarLinkColorHover:            @white;
+@navbarText:                      @grayDarker;
+@navbarLinkColor:                 @linkColor;
+@navbarLinkColorHover:            darken(@linkColor, 25%);
 
 // Form states and alerts
 @warningText:             #c09853;
