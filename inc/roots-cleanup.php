@@ -691,4 +691,3 @@ if (class_exists('RGForms')) {
 
 }
 
-?>

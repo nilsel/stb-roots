@@ -38,5 +38,3 @@ function roots_google_analytics() {
     echo "\t</script>\n";
   }
 }
-
-?>

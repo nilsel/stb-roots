@@ -321,4 +321,3 @@ function roots_deactivation_action() {
 
 add_action('switch_theme', 'roots_deactivation_action');
 
-?>
