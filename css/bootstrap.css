@@ -2835,6 +2835,7 @@ input[type="submit"].btn.small {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  border-bottom: 2px #aa0000 solid;
 }
 .navbar .nav {
   position: relative;
