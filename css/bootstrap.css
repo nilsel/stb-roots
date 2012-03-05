@@ -101,6 +101,16 @@ textarea {
   overflow: auto;
   vertical-align: top;
 }
+::-moz-selection {
+  background: #46a546;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #46a546;
+  color: #fff;
+  text-shadow: none;
+}
 .clearfix {
   *zoom: 1;
 }
@@ -124,13 +134,14 @@ body {
 }
 #main > article {
   background-color: #FFF;
-  /* padding: 2em 3em 1.5em; */
-
-  padding: 19px;
+  padding-top: 19px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   margin-bottom: 0.5em;
+}
+#content > div#main > div.well {
+  background-color: #FFF;
 }
 a {
   color: #0088cc;
@@ -308,11 +319,24 @@ a:hover {
 .container-fluid:after {
   clear: both;
 }
+#main {
+  margin-top: 1.5em;
+}
 #sidebar .well {
   margin-top: 1.5em;
 }
-#sidebar ul.wordtwit-recent-tweets li {
-  margin-bottom: 1em;
+#sidebar article.juiz_last_tweet_widget h3 {
+  margin-bottom: 0.15em;
+}
+#sidebar ul#juiz_last_tweet_tweetlist {
+  margin: 0 0 9px 0;
+  list-style: none;
+}
+#sidebar ul#juiz_last_tweet_tweetlist li {
+  background-color: transparent;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px #ccc dotted;
 }
 p {
   margin: 0 0 9px;
@@ -2700,7 +2724,7 @@ input[type="submit"].btn.small {
 .navbar .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
-  color: #999999;
+  color: #222222;
 }
 .navbar .navbar-text a:hover {
   color: #ffffff;
@@ -2817,7 +2841,7 @@ input[type="submit"].btn.small {
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 9px 10px 0 0;
 }
 .navbar .nav.pull-right {
   float: right;
@@ -2830,18 +2854,18 @@ input[type="submit"].btn.small {
   float: none;
   padding: 10px 10px 11px;
   line-height: 19px;
-  color: #999999;
+  color: #0088cc;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: #ffffff;
-  text-decoration: none;
+  color: #00334d;
+  text-decoration: underline;
 }
 .navbar .nav .active > a,
 .navbar .nav .active > a:hover {
-  color: #ffffff;
+  color: #00334d;
   text-decoration: none;
   background-color: #ffffff;
 }
@@ -3691,4 +3715,7 @@ h3 {
   font-family: "SignaWeb-Book";
   font-weight: normal;
   color: #333333;
+}
+a h1 {
+  color: #005580;
 }
