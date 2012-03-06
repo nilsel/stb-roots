@@ -1,6 +1,6 @@
 <?php function roots_comment($comment, $args, $depth) {
   $GLOBALS['comment'] = $comment; ?>
-  <li <?php comment_class(); ?>>
+  <li <?php comment_class('comment-well'); ?>>
     <article id="comment-<?php comment_ID(); ?>">
       <header class="comment-author vcard">
         <?php echo get_avatar($comment, $size = '32'); ?>
