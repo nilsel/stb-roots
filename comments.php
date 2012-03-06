@@ -28,7 +28,7 @@
 <?php if (post_password_required()) { ?>
   <section id="comments">
     <div class="alert alert-block fade in">
-      <a class="close" data-dismiss="alert">×</a>
+      <a class="close" data-dismiss="alert">&times;</a>
       <p><?php _e('This post is password protected. Enter the password to view comments.', 'roots'); ?></p>
     </div>
   </section><!-- /#comments -->
