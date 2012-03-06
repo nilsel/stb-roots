@@ -8,7 +8,7 @@ function roots_get_stylesheets() {
   $styles .= stylesheet_link_tag('/bootstrap.css', 1);
 
   if (BOOTSTRAP_RESPONSIVE) {
-    $styles .= stylesheet_link_tag('/bootstrap-responsive.css', 1);
+    $styles .= stylesheet_link_tag('/responsive.css', 1);
   }
 
   $styles .= stylesheet_link_tag('/app.css', 1);
