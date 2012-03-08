@@ -5,13 +5,20 @@
 // STBMOD
 @stbRounded:			4px;
 @stbRed:				#e31e2a;
+@stbRedDark:			#96050e;
+
+@stbLinkColor:			#0c6696;
+@stbLinkColorLight:		#0675b0;
+
+@stbYellow:				#e8e336;
+
 
 // GLOBAL VALUES
 // --------------------------------------------------
 
 // Links
-@linkColor:             #08c;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             @stbLinkColor;
+@linkColorHover:        @stbLinkColorLight;
 
 // Grays
 @black:                 #000;
@@ -72,9 +79,9 @@
 @hrBorder:                @grayLighter;
 
 // Navbar
-@navbarHeight:                    40px;
-@navbarBackground:                @grayLighter;
-@navbarBackgroundHighlight:       @white;
+@navbarHeight:                    40px; //has no effect (?)
+@navbarBackground:                @white;
+@navbarBackgroundHighlight:       @grayLighter;
 @navbarLinkBackgroundHover:       transparent;
 
 @navbarText:                      @grayDarker;
